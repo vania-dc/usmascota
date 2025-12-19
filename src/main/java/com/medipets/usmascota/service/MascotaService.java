@@ -9,4 +9,6 @@ import com.medipets.usmascota.dto.MascotaDTO;
 public interface MascotaService {
     MascotaDTO registrarMascota(MascotaDTO mascotaDTO);
     List<MascotaDTO> listarPorCliente(Long clienteId);
+
+     void eliminarMascota(Long mascotaId);
 }

@@ -10,5 +10,6 @@ public class MascotaDTO {
     private String tipo;
     private String raza;
     private Integer edadAnios;
+    private Integer edadMeses;
     private String fotoUrl;
 }

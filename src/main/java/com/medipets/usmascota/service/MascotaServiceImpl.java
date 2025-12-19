@@ -41,4 +41,14 @@ public class MascotaServiceImpl implements MascotaService{
             return dto;
         }).collect(Collectors.toList());
     }
+
+     @Override
+    public void eliminarMascota(Long mascotaId) {
+
+        if (!repository.existsById(mascotaId)) {
+            throw new RuntimeException("La mascota no existe");
+        }
+
+        repository.deleteById(mascotaId);
+    }
 }
