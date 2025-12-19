@@ -4,11 +4,12 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.medipets.usmascota.dto.MascotaDTO;
 import com.medipets.usmascota.model.MascotaEntity;
 import com.medipets.usmascota.repository.MascotaRepository;
-
+@Service
 public class MascotaServiceImpl implements MascotaService{
 
     @Autowired
